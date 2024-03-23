@@ -1,0 +1,46 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"g8ObUaJ6JL\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Access Management</span>\",\"col\":12}},{\"id\":\"iP1tYyPM9R\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Resource\",\"col\":3}},{\"id\":\"Tw3go4A0fT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Access\",\"col\":3}}]",
+ "creation": "2024-03-23 19:11:25.525391",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "lock",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Access Management",
+ "links": [],
+ "modified": "2024-03-23 19:13:29.318527",
+ "modified_by": "Administrator",
+ "module": "Access Management",
+ "name": "Access Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 39.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Resource",
+   "link_to": "Resource",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Active",
+   "label": "Access",
+   "link_to": "Access",
+   "stats_filter": "[[\"Access\",\"status\",\"=\",\"Active\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Access Management"
+}
