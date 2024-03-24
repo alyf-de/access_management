@@ -10,11 +10,18 @@
   "title",
   "description",
   "url",
+  "section_break_vlv5x",
   "monthly_cost_per_account",
+  "monthly_fixed_cost",
+  "section_break_sxkao",
   "owner_type",
   "owner1",
-  "owner_email",
-  "provider"
+  "column_break_wvuxk",
+  "owner_contact",
+  "section_break_wz2y7",
+  "provider",
+  "column_break_my6jc",
+  "provider_contact"
  ],
  "fields": [
   {
@@ -59,10 +66,43 @@
    "options": "Supplier"
   },
   {
-   "fieldname": "owner_email",
-   "fieldtype": "Data",
-   "label": "Owner Email",
-   "options": "Email"
+   "fieldname": "monthly_fixed_cost",
+   "fieldtype": "Currency",
+   "label": "Monthly Fixed Cost"
+  },
+  {
+   "fieldname": "section_break_sxkao",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "owner1",
+   "fieldname": "owner_contact",
+   "fieldtype": "Link",
+   "label": "Owner Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "section_break_wz2y7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "provider",
+   "fieldname": "provider_contact",
+   "fieldtype": "Link",
+   "label": "Provider Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "section_break_vlv5x",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wvuxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_my6jc",
+   "fieldtype": "Column Break"
   }
  ],
  "links": [
@@ -71,7 +111,7 @@
    "link_fieldname": "resource"
   }
  ],
- "modified": "2024-03-23 19:05:17.198270",
+ "modified": "2024-03-24 17:27:50.538455",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Resource",
