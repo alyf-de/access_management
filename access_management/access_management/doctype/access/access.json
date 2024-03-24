@@ -9,7 +9,9 @@
  "field_order": [
   "user",
   "resource",
-  "status"
+  "status",
+  "granted_on",
+  "revoked_on"
  ],
  "fields": [
   {
@@ -31,16 +33,29 @@
    "reqd": 1
   },
   {
+   "default": "Active",
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
    "options": "Planned\nActive\nPaused\nRevoked"
+  },
+  {
+   "depends_on": "eval: doc.status !== \"Planned\"",
+   "fieldname": "granted_on",
+   "fieldtype": "Date",
+   "label": "Granted On"
+  },
+  {
+   "depends_on": "eval: doc.status === \"Revoked\"",
+   "fieldname": "revoked_on",
+   "fieldtype": "Date",
+   "label": "Revoked On"
   }
  ],
  "links": [],
- "modified": "2024-03-23 19:04:30.631375",
+ "modified": "2024-03-24 16:30:00.338038",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Access",
@@ -80,5 +95,6 @@
    "title": "Revoked"
   }
  ],
- "title_field": "user"
+ "title_field": "user",
+ "track_changes": 1
 }
