@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "creation": "2025-07-17 22:07:53.296749",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "supplier_name",
+  "supplier_contact",
+  "column_break_sw6g4",
+  "iso_9001",
+  "iso_27001",
+  "is_outside_eu",
+  "eu_scc",
+  "section_break_jhnv1",
+  "data_processing_agreement",
+  "list_of_subprocessors"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "supplier_contact",
+   "fieldtype": "Link",
+   "label": "Supplier Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_sw6g4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "iso_9001",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "ISO 9001"
+  },
+  {
+   "default": "0",
+   "fieldname": "iso_27001",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "ISO 27001"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_outside_eu",
+   "fieldtype": "Check",
+   "label": "Is Outside EU"
+  },
+  {
+   "default": "0",
+   "fieldname": "eu_scc",
+   "fieldtype": "Check",
+   "label": "EU SCC"
+  },
+  {
+   "fieldname": "section_break_jhnv1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_processing_agreement",
+   "fieldtype": "Data",
+   "label": "Data Processing Agreement",
+   "options": "URL"
+  },
+  {
+   "fieldname": "list_of_subprocessors",
+   "fieldtype": "Data",
+   "label": "List of Subprocessors",
+   "options": "URL"
+  }
+ ],
+ "links": [],
+ "modified": "2025-07-17 22:22:12.488233",
+ "modified_by": "Administrator",
+ "module": "Access Management",
+ "name": "Personal Data Processor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "supplier_name"
+}

@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2025-07-17 21:35:58.583853",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "known_since",
+  "column_break_ffm9a",
+  "has_high_risk",
+  "supervisory_authority_notified",
+  "data_subjects_notified",
+  "section_break_emils",
+  "processor",
+  "processor_name",
+  "processor_contact",
+  "section_break_0wynr",
+  "controller",
+  "controller_name",
+  "controller_contact",
+  "column_break_apbym",
+  "controller_notified",
+  "section_break_c4xo7",
+  "data_protection_officer",
+  "column_break_xffwz",
+  "dpa_email",
+  "dpa_phone",
+  "section_break_36njt",
+  "description",
+  "likely_consequences",
+  "measures_taken"
+ ],
+ "fields": [
+  {
+   "fieldname": "known_since",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Known since"
+  },
+  {
+   "fieldname": "controller",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "label": "Controller",
+   "options": "Customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "controller_notified",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Controller Notified"
+  },
+  {
+   "default": "0",
+   "fieldname": "supervisory_authority_notified",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Supervisory Authority Notified"
+  },
+  {
+   "description": "Describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned.",
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "data_protection_officer",
+   "fieldtype": "Link",
+   "label": "Data Protection Officer",
+   "options": "Contact"
+  },
+  {
+   "fetch_from": "data_protection_officer.phone",
+   "fieldname": "dpa_email",
+   "fieldtype": "Data",
+   "label": "DPA Email"
+  },
+  {
+   "fetch_from": "data_protection_officer.email_id",
+   "fieldname": "dpa_phone",
+   "fieldtype": "Data",
+   "label": "DPA Phone"
+  },
+  {
+   "fieldname": "likely_consequences",
+   "fieldtype": "Long Text",
+   "label": "Likely Consequences"
+  },
+  {
+   "fieldname": "measures_taken",
+   "fieldtype": "Long Text",
+   "label": "Measures Taken"
+  },
+  {
+   "fetch_from": "controller.customer_name",
+   "fieldname": "controller_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Controller Name"
+  },
+  {
+   "fieldname": "column_break_ffm9a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_0wynr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_apbym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_c4xo7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xffwz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_36njt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_emils",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "processor",
+   "fieldtype": "Link",
+   "label": "Processor",
+   "options": "Personal Data Processor"
+  },
+  {
+   "fetch_from": "processor.supplier_name",
+   "fieldname": "processor_name",
+   "fieldtype": "Data",
+   "label": "Processor Name"
+  },
+  {
+   "fetch_from": "processor.supplier_contact",
+   "fieldname": "processor_contact",
+   "fieldtype": "Link",
+   "label": "Processor Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "controller_contact",
+   "fieldtype": "Link",
+   "label": "Controller Contact",
+   "options": "Contact"
+  },
+  {
+   "default": "0",
+   "description": "The personal data breach is likely to result in a high risk to the rights and freedoms of natural persons.",
+   "fieldname": "has_high_risk",
+   "fieldtype": "Check",
+   "label": "Has High Risk"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_subjects_notified",
+   "fieldtype": "Check",
+   "label": "Data Subjects Notified"
+  }
+ ],
+ "links": [],
+ "modified": "2025-07-17 22:15:23.540745",
+ "modified_by": "Administrator",
+ "module": "Access Management",
+ "name": "Personal Data Breach",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1
+}
