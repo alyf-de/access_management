@@ -27,6 +27,7 @@
    "label": "Description"
   },
   {
+   "depends_on": "category_group",
    "fieldname": "category",
    "fieldtype": "Link",
    "label": "Category",
@@ -41,7 +42,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-17 22:44:21.143309",
+ "modified": "2025-07-21 17:42:41.856195",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Data Protection Measure",

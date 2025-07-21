@@ -18,4 +18,8 @@ frappe.ui.form.on("Data Protection Measure", {
 			};
 		});
 	},
+
+	category_group: function (frm) {
+		frm.set_value("category", "");
+	},
 });
