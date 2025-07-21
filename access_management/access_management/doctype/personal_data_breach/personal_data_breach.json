@@ -45,7 +45,7 @@
    "fieldtype": "Link",
    "in_filter": 1,
    "label": "Controller",
-   "options": "Customer"
+   "options": "Personal Data Controller"
   },
   {
    "default": "0",
@@ -156,6 +156,7 @@
    "options": "Contact"
   },
   {
+   "fetch_from": "controller.customer_contact",
    "fieldname": "controller_contact",
    "fieldtype": "Link",
    "label": "Controller Contact",
@@ -176,7 +177,7 @@
   }
  ],
  "links": [],
- "modified": "2025-07-17 22:15:23.540745",
+ "modified": "2025-07-21 17:56:23.421226",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Personal Data Breach",
