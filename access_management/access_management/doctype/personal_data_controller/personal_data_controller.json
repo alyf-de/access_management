@@ -1,6 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "hash",
  "creation": "2025-07-17 22:16:49.585062",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,14 +10,17 @@
   "customer",
   "customer_name",
   "customer_contact",
+  "data_processing_agreement",
   "approved_processors"
  ],
  "fields": [
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fetch_from": "customer.customer_name",
@@ -36,14 +39,20 @@
    "fieldtype": "Table",
    "label": "Approved Processors",
    "options": "Approved Processor"
+  },
+  {
+   "fieldname": "data_processing_agreement",
+   "fieldtype": "Data",
+   "label": "Data Processing Agreement",
+   "options": "URL"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-17 22:17:11.858691",
+ "modified": "2025-07-21 17:53:40.717976",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Personal Data Controller",
+ "naming_rule": "Random",
  "owner": "Administrator",
  "permissions": [
   {
