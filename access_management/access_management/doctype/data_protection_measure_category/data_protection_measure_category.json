@@ -70,7 +70,7 @@
    "link_fieldname": "category"
   }
  ],
- "modified": "2025-07-17 22:59:14.898580",
+ "modified": "2025-07-21 17:41:48.201528",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Data Protection Measure Category",
@@ -90,6 +90,7 @@
    "write": 1
   }
  ],
+ "search_fields": "title,description",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
