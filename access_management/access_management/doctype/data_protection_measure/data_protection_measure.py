@@ -18,7 +18,7 @@ class DataProtectionMeasure(Document):
 			parent, child_is_group = frappe.db.get_value(
 				"Data Protection Measure Category",
 				self.category,
-				["parent_data_protection_measure_category, is_group"],
+				["parent_data_protection_measure_category", "is_group"],
 			)
 			if parent and self.category_group != parent:
 				frappe.throw(_("The selected Category is not a child of the selected Category Group."))
