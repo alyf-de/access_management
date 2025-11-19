@@ -1,8 +1,7 @@
 // Copyright (c) 2025, ALYF GmbH and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Personal Data Breach', {
+frappe.ui.form.on("Personal Data Breach", {
 	// refresh: function(frm) {
-
 	// }
 });
