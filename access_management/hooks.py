@@ -5,6 +5,16 @@ app_description = "Manage employee access to company assets"
 app_email = "hallo@alyf.de"
 app_license = "GPLv3"
 
+add_to_apps_screen = [
+	{
+		"name": app_name,
+		"logo": "/assets/access_management/img/logo.png",
+		"title": app_title,
+		"route": "/desk/access-management",
+		"has_permission": "access_management.api.permission.has_app_permission",
+	}
+]
+
 # Includes in <head>
 # ------------------
 
