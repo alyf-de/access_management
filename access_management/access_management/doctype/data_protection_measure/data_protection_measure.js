@@ -3,7 +3,7 @@
 
 frappe.ui.form.on("Data Protection Measure", {
 	refresh: function (frm) {
-		frm.set_query("category_group", (doc) => {
+		frm.set_query("category_group", () => {
 			return {
 				filters: {
 					is_group: 1,
