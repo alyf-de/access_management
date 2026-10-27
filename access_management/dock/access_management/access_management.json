@@ -10,11 +10,11 @@
    "hidden": 0,
    "icon": "key-round",
    "link_to": "Access Management",
-   "link_type": "Workspace",
+   "link_type": "Sidebar",
    "title": "Access Management"
   }
  ],
- "modified": "2026-10-27 18:28:28.006352",
+ "modified": "2026-10-27 19:17:43.557124",
  "modified_by": "Administrator",
  "mount_on": "",
  "name": "access_management",

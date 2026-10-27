@@ -10,7 +10,7 @@ add_to_apps_screen = [
 		"name": app_name,
 		"logo": "/assets/access_management/img/logo.png",
 		"title": app_title,
-		"route": "/desk/access-management",
+		"route": "/desk/access",
 		"has_permission": "access_management.api.permission.has_app_permission",
 	}
 ]
