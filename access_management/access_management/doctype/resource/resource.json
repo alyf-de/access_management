@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_bulk_edit": 1,
  "autoname": "autoincrement",
  "creation": "2024-03-23 18:56:59.684528",
  "default_view": "List",
@@ -105,13 +106,14 @@
    "fieldtype": "Column Break"
   }
  ],
+ "grid_page_length": 50,
  "links": [
   {
    "link_doctype": "Access",
    "link_fieldname": "resource"
   }
  ],
- "modified": "2024-03-24 17:27:50.538455",
+ "modified": "2026-10-27 18:27:11.684387",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Resource",
@@ -131,8 +133,10 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
  "show_title_field_in_link": 1,
- "sort_field": "modified",
+ "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
  "title_field": "title"

@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_bulk_edit": 1,
  "creation": "2025-07-17 22:07:53.296749",
  "default_view": "List",
  "doctype": "DocType",
@@ -84,8 +85,9 @@
    "options": "URL"
   }
  ],
+ "grid_page_length": 50,
  "links": [],
- "modified": "2025-07-17 22:22:12.488233",
+ "modified": "2026-10-27 18:27:11.105102",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Personal Data Processor",
@@ -104,8 +106,10 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
  "show_title_field_in_link": 1,
- "sort_field": "modified",
+ "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
  "title_field": "supplier_name"
