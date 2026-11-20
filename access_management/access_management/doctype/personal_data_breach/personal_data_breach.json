@@ -75,13 +75,13 @@
    "options": "Contact"
   },
   {
-   "fetch_from": "data_protection_officer.phone",
+   "fetch_from": "data_protection_officer.email_id",
    "fieldname": "dpa_email",
    "fieldtype": "Data",
    "label": "DPA Email"
   },
   {
-   "fetch_from": "data_protection_officer.email_id",
+   "fetch_from": "data_protection_officer.phone",
    "fieldname": "dpa_phone",
    "fieldtype": "Data",
    "label": "DPA Phone"
@@ -178,8 +178,9 @@
   }
  ],
  "grid_page_length": 50,
+ "link_display_mode": "Search",
  "links": [],
- "modified": "2026-10-27 18:27:11.347575",
+ "modified": "2026-11-20 14:46:28.063191",
  "modified_by": "Administrator",
  "module": "Access Management",
  "name": "Personal Data Breach",
